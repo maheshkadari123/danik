@@ -1,0 +1,21 @@
+let express=require("express")
+const { reguser, userlogin} = require("../controller/usercontroller")
+const { addprod, getprod ,upload, getcat, addcart, getcart, delcart, inc, dec, delproduct, updprod, addcom, getprdbyid} = require("../controller/prodcontroller")
+
+let route=new express.Router()
+route.post("/reguser",reguser)
+route.post("/userlogin",userlogin)
+route.post("/addprod",upload.single("pimg"),addprod)
+route.get("/getprod",getprod)
+route.get("/getprod/:cat",getcat)
+route.post("/addcart",addcart)
+route.get("/getcart/:uid",getcart)
+route.delete("/delcart/:cid",delcart)
+route.delete("/delproduct/:pid/:pimg",delproduct)
+route.put('/updprod',updprod)
+route.get('/inc/:cid' ,inc)
+route.get('/dec/:cid',dec)
+route.put('/addcom',addcom)
+route.get('/getprdbyid/:pid',getprdbyid)
+
+module.exports=route

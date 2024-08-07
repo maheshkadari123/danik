@@ -1,0 +1,80 @@
+nav{
+  width: 100%;
+  height:10vh;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+nav a{
+  color: brown;
+  text-decoration: none;
+  font-size: 25px;
+}
+.cont{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:10px;
+  padding: 20px 0px;
+}
+.cont .prdcon{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  color: chocolate;
+  border-radius: 10%;
+  padding-bottom: 10px;
+}
+.prdcon .img {
+  padding-top: 10px;
+  width:200px;
+  height:200px;
+}
+.prdcon .img img{
+  width:100%;
+  height:100%;
+  border-radius: 20%;
+}
+.prdcon .img img:hover{
+  box-shadow: 3px 4px 0px 2px red;
+  cursor: pointer;
+}
+.schbr{
+   width:60%;
+   text-align: center;
+}
+.con{
+  width:100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:darkgray
+}
+.con .form{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: darksalmon;
+  padding: 25px 0px;
+  align-items: center;
+}
+.form>input{
+  width:80%;
+  height: 2vh;
+  border: none;
+  font-size: 20px;
+  color: brown;
+}
+.form::placeholder{
+  color: crimson;
+}
+
